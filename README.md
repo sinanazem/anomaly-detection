@@ -60,4 +60,23 @@ array([-1, 1, 1, 1, -1, -1, -1], dtype=int64)
 ```
 array([-1, 1, 1, 1, -1, -1, -1], dtype=int64)
 ```
-<br>Here -1 refers to outlier and 1 refers to not an outliers.
+Here -1 refers to outlier and 1 refers to not an outliers.
+<br>
+#### Isolation Forest
+Isolation Forest is an ensemble model which isolates observations by randomly selecting a
+feature and selecting a split value between maximum and minimum of selected feature.
+Since this recursive partitioning is represented by a tree structure, and number of splittings is
+equivalent to path length from root node to terminating node.
+
+See Isolation Forest in code.
+```
+from sklearn.ensemble import IsolationForest
+X = [[-1.1], [0.3], [0.5], [100]]
+clf = IsolationForest(random_state=0).fit(X)
+clf.predict([[0.1], [0], [90]])
+```
+<br>output:
+```
+array([ 1, 1, -1])
+```
+Here -1 refers to outlier and 1 refers to not an outliers.
