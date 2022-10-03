@@ -36,9 +36,28 @@ df.describe()
 ```
 
 ## Outlier Detection Using Machine Learning
-Robust Covariance – Elliptic Envelope
+Robust Covariance – Elliptic Envelope<br>
 This method is based on premises that outliers in a data leads increase in covariance, making
 the range of data larger. Subsequently the determinant of covariance will also increase, this
 in theory should reduce by removing the outliers in the datasets. This method assumes that
 some of hyper parameters in n samples follow Gaussian distribution. Here is flow on how
 this works:
+<br>
+ #### One-Class SVM
+One class Support Vector Machine is a special case in support vector machines which is used
+for unsupervised outlier detection. For more information on support vector
+
+Let see outlier detection python code using One Class SVM. We will see two different
+examples for it.
+```
+from sklearn.svm import OneClassSVM
+X = [[0], [0.44], [0.45], [0.46], [1]]
+clf = OneClassSVM(gamma='auto').fit(X)
+clf.predict(X)
+array([-1, 1, 1, 1, -1, -1, -1], dtype=int64)
+```
+<br>output:
+```
+array([-1, 1, 1, 1, -1, -1, -1], dtype=int64)
+```
+<br>Here -1 refers to outlier and 1 refers to not an outliers.
