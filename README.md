@@ -24,7 +24,7 @@ exists in the data.
 <br>If you have dataset you can quickly just sort ascending or descending.
 While it is looks so obvious, but sorting actually works on real world.<br>
 **Outlier Detection Python** 
-<br>Quick Method in Pandas – Describe( ) API
+<br>Quick Method in Pandas – Describe( )
 
 ```
 import numpy as np
