@@ -1,1 +1,1 @@
-# outlier_detection
+# Outlier Detection
