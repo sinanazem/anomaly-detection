@@ -64,9 +64,12 @@ Here -1 refers to outlier and 1 refers to not an outliers.
 <br>
 #### Isolation Forest
 Isolation Forest is an ensemble model which isolates observations by randomly selecting a
-feature and selecting a split value between maximum and minimum of selected feature.
+feature and selecting a split value between maximum and minimum of selected feature.<br>
 Since this recursive partitioning is represented by a tree structure, and number of splittings is
 equivalent to path length from root node to terminating node.
+<br><br>
+
+<img src="https://miro.medium.com/max/1400/1*6GFMewU1Aax57nsW2uSakQ.png" high=450 width=550>
 
 See Isolation Forest in code.
 ```
