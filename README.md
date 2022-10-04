@@ -204,6 +204,6 @@ legend.legendHandles[1]._sizes = [20]
 plt.show()
 
 ```
-*** In Summary , we have discussed various quick methods through we can identify outliers.
+In Summary , we have discussed various quick methods through we can identify outliers.
 There are other advanced machine learning models which can also be used to identify
-outliers***
+outliers
